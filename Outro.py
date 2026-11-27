@@ -25,7 +25,7 @@ class Prato(Produto):
     def descricao(self) -> str:
         return f"{self.nome} (serve {self.serve})"
 
-from collections import deque
-fila = deque(["p101", "p102"])
+from collections import deque #Não é algo sequencial como uma lista, portanto é mais rápido
+fila = deque(["p101", "p102"]) #Simula o conceito de filas
 fila.append("p103") #Nenhum precisa andar pra frente com deque
 fila.popleft()
